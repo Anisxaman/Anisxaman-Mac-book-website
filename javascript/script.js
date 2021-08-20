@@ -17,8 +17,7 @@ memory(num1,idpara){
 // ------------------------------------------calculation ------------------------------------------
 function 
 calculation(){
-//    const BestPrice= document.getElementById("BestPrice");
-//    const BestPhnPrice=eval(BestPrice.innerText);
+
         const memoryCost=document.getElementById("memoryCost").innerText;
         const extraMemoryCost=eval(memoryCost);
         const storageCost=document.getElementById("storageCost").innerText;
@@ -46,9 +45,6 @@ discount(price){
             discountTotal.innerText=price;
 
 }
-
-
-
 
 
 
@@ -103,19 +99,6 @@ document.getElementById('input').addEventListener('keyup',function(event){
           
  })
 
-
-// document.getElementById("applyBtn").addEventListener('click',function(){
-    
-//     const input=document.getElementById("input");
-//     // const inputfield=input.value;
-//     const FinalAmount= document.getElementById('finalTotal');
-//     const discountFinalAmount=eval( FinalAmount.innerText);
-    
-   
-//     FinalAmount.innerText= discountFinalAmount*0.8;
-//     input.value='';
-
-// })
 
 
 // ----------------------------(function for cupon code try exceed)--------------------------------------
