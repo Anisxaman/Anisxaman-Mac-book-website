@@ -10,7 +10,7 @@ function memory(num1,idpara){
 }
 
 
-
+// ------------------------------------------calculation ------------------------------------------
 function calculation(){
 //    const BestPrice= document.getElementById("BestPrice");
 //    const BestPhnPrice=eval(BestPrice.innerText);
@@ -46,7 +46,7 @@ function discount(price){
 
 
 
-
+//------------------------------------------ event---------------------------------------------------
 document.getElementById("memoryBtnOne").addEventListener('click',function(){
     memory(0,"memoryCost");
     
@@ -75,6 +75,46 @@ document.getElementById("deliveryBtnTwo").addEventListener('click',function(){
     memory(20,"deliveryCharge");
     
 })
+
+
+
+// ------------------------------------------------------
+
+
+
+document.getElementById('input').addEventListener('keyup',function(event){
+    const applyBtn= document.getElementById('applyBtn');
+    if(event.target.value=='stevekaku'){
+        applyBtn.removeAttribute('disabled');
+      
+    }
+
+    else{
+        applyBtn.setAttribute('disabled',true);
+    }
+
+ 
+    deteteField.value=''
+ })
+
+
+document.getElementById("applyBtn").addEventListener('click',function(){
+    
+    const input=document.getElementById("input");
+    // const inputfield=input.value;
+    const FinalAmount= document.getElementById('finalTotal');
+    const discountFinalAmount=eval( FinalAmount.innerText);
+    
+   
+    FinalAmount.innerText= discountFinalAmount*0.8;
+    input.value='';
+
+})
+
+
+
+// -----------------------------------------------
+
 
 
 
