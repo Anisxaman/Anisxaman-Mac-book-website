@@ -6,6 +6,9 @@ Mac book peo website when you calculated total price If you want to update your 
 
 https://anisxaman.github.io/Anisxaman-Mac-book-website/
 
+
+### promo code:  stevekaku
+
 ## Author
 
 [Anishuzzaman][author]
